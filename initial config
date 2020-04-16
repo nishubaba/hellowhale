@@ -5,6 +5,14 @@ https://atkearney.webex.com/atkearney/j.php?MTID=m71789601ebc84a932b98b4e9f280b6
 Kubernetes Webinar Series - Building CI CD Pipelines with Jenkins and Kubernetes
 https://www.youtube.com/watch?v=288rTpd1SDE
 
+Kubernetes Webinar Series - Building CI CD Pipelines with Jenkins and Kubernetes
+https://www.youtube.com/watch?v=288rTpd1SDE
+
+install google cloud  sdk
+https://cloud.google.com/sdk/docs/quickstart-linux
+install kubectl
+https://kubernetes.io/docs/tasks/tools/install-kubectl/
+
 
 gcloud auth login
 gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project jenkins-274404
