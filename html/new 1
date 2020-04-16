@@ -1,0 +1,19 @@
+https://atkearney.webex.com/atkearney/j.php?MTID=m71789601ebc84a932b98b4e9f280b6c9
+
+
+
+Kubernetes Webinar Series - Building CI CD Pipelines with Jenkins and Kubernetes
+https://www.youtube.com/watch?v=288rTpd1SDE
+
+gcloud auth login
+gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project jenkins-274404
+kubectl get deployments
+kubectl create deployment hellowhale --image xnits/hellowhale
+kubectl get deployments
+kubectl get pods
+kubectl expose deployment/hellowhale --port=80 --name=hellowhalesvc --type=LoadBalancer
+kubectl get svc
+
+jenkins URL: from : http://localhost:8080/
+					to : http://jenkins.ioc/
+Github : Hook ?
