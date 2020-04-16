@@ -5,6 +5,7 @@ https://atkearney.webex.com/atkearney/j.php?MTID=m71789601ebc84a932b98b4e9f280b6
 Kubernetes Webinar Series - Building CI CD Pipelines with Jenkins and Kubernetes
 https://www.youtube.com/watch?v=288rTpd1SDE
 
+
 gcloud auth login
 gcloud container clusters get-credentials cluster-1 --zone us-central1-c --project jenkins-274404
 kubectl get deployments
@@ -17,3 +18,24 @@ kubectl get svc
 jenkins URL: from : http://localhost:8080/
 					to : http://jenkins.ioc/
 Github : Hook ?
+
+
+
+
+
+BOX1: BUILD
+echo 'Build'
+IMAGE_NAME="xnits/hellowhale:${BUILD_NUMBER}"
+docker build . -t $IMAGE_NAME
+docker login -u xnits -p password
+docker push $IMAGE_NAME
+
+
+
+
+
+BOX2: DEPLOY
+echo 'Deployig On Kubernetes'
+IMAGE_NAME="xnits/hellowhale:${BUILD_NUMBER}"
+
+kubectl set image deployment/hellowhale hellowhale=$IMAGE_NAME
